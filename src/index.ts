@@ -1,4 +1,4 @@
-import { ChartJSNodeCanvas, ChartCallback } from "chartjs-node-canvas";
+import { ChartJSNodeCanvas } from "chartjs-node-canvas";
 import fs from "fs";
 
 import Portfolio from "./Portfolio";
@@ -28,13 +28,15 @@ const portfolio: Portfolio = {
 async function run() {
   console.log(monteCarlo({ portfolio, initialPrice: 10, numSimulations: 10 }));
 
+  const data = null;
+
   const chartJSNodeCanvas = new ChartJSNodeCanvas({
     width: 400, height: 400, chartCallback: (ChartJS) => {
       ChartJS.defaults.responsive = true;
       ChartJS.defaults.maintainAspectRatio = false;
     }
   });
-  const buffer = await chartJSNodeCanvas.renderToBuffer(chartConfig);
+  const buffer = await chartJSNodeCanvas.renderToBuffer(chartConfig(data));
   await fs.writeFileSync("./example.png", buffer, "base64");
 }
 

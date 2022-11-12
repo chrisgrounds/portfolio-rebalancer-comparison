@@ -1,7 +1,7 @@
 import Distribution from "./Distribution";
 
 // https://en.wikipedia.org/wiki/Box%E2%80%93Muller_transform
-const normalDistribution: Distribution = (): number => {
+const normalDistribution: Distribution = () => {
   const u = Math.random();
   const v = Math.random();
   let num = Math.sqrt(-2.0 * Math.log(u)) * Math.cos(2.0 * Math.PI * v);
