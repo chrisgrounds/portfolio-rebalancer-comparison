@@ -3,6 +3,7 @@ type Position = {
   quantity: number,
   price: number,
   leverage: number,
+  total: number,
 };
 
 export default Position;

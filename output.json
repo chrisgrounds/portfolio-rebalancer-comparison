@@ -1,210 +1,264 @@
 [
   {
-    "iteration": 1,
-    "normal": 1.0353623365222553,
-    "newUnderlyingPrice": 10.353623365222553,
+    "iteration": 0,
+    "normal": 0,
+    "newUnderlyingPrice": 0,
     "portfolio": {
+      "total": 20000,
       "shares": [
         {
           "symbol": "abc",
-          "quantity": 206.83091035376776,
-          "price": 103.53623365222553,
-          "leverage": 1
+          "quantity": 100,
+          "price": 100,
+          "leverage": 1,
+          "total": 10000
         },
         {
           "symbol": "abcx",
-          "quantity": 1936.0586713045186,
-          "price": 11.060870095667658,
-          "leverage": 3
+          "quantity": 1000,
+          "price": 10,
+          "leverage": 3,
+          "total": 10000
+        }
+      ]
+    }
+  },
+  {
+    "iteration": 1,
+    "normal": 1.0863345064946803,
+    "newUnderlyingPrice": 10.863345064946802,
+    "portfolio": {
+      "total": 23453.380259787213,
+      "shares": [
+        {
+          "symbol": "abc",
+          "quantity": 107.94732248478964,
+          "price": 108.63345064946803,
+          "leverage": 1,
+          "total": 10863.345064946803
+        },
+        {
+          "symbol": "abcx",
+          "quantity": 931.4263183870513,
+          "price": 12.59003519484041,
+          "leverage": 3,
+          "total": 12590.035194840411
         }
       ]
     }
   },
   {
     "iteration": 2,
-    "normal": 0.9098402679274318,
-    "newUnderlyingPrice": 9.420143456633806,
+    "normal": 0.9803746097221424,
+    "newUnderlyingPrice": 10.650147678324183,
     "portfolio": {
+      "total": 22532.81677792056,
       "shares": [
         {
           "symbol": "abc",
-          "quantity": 372.67040689750525,
-          "price": 94.20143456633805,
-          "leverage": 1
+          "quantity": 105.78640530863574,
+          "price": 106.50147678324184,
+          "leverage": 1,
+          "total": 11496.549259426944
         },
         {
           "symbol": "abcx",
-          "quantity": 4350.663067903195,
-          "price": 8.069134842723024,
-          "leverage": 3
+          "quantity": 950.8494850808588,
+          "price": 11.848782131908292,
+          "leverage": 3,
+          "total": 11036.267518493618
         }
       ]
     }
   },
   {
     "iteration": 3,
-    "normal": 1.044089675525955,
-    "newUnderlyingPrice": 9.835474525044738,
+    "normal": 1.0451317279872567,
+    "newUnderlyingPrice": 11.130807246366423,
     "portfolio": {
+      "total": 24566.70669313617,
       "shares": [
         {
           "symbol": "abc",
-          "quantity": 776.8149633884535,
-          "price": 98.35474525044738,
-          "leverage": 1
+          "quantity": 110.35455986876335,
+          "price": 111.30807246366425,
+          "leverage": 1,
+          "total": 11774.880867764183
         },
         {
           "symbol": "abcx",
-          "quantity": 8362.503261588312,
-          "price": 9.136431453695533,
-          "leverage": 3
+          "quantity": 913.0534111467127,
+          "price": 13.453050168380951,
+          "leverage": 3,
+          "total": 12791.825825371989
         }
       ]
     }
   },
   {
     "iteration": 4,
-    "normal": 1.0566366687138016,
-    "newUnderlyingPrice": 10.392523037362732,
+    "normal": 0.8924299808207579,
+    "newUnderlyingPrice": 9.933466097394339,
     "portfolio": {
+      "total": 19281.424472833223,
       "shares": [
         {
           "symbol": "abc",
-          "quantity": 1636.9058777940347,
-          "price": 103.92523037362731,
-          "leverage": 1
+          "quantity": 97.05285287021292,
+          "price": 99.33466097394341,
+          "leverage": 1,
+          "total": 10962.03279149235
         },
         {
           "symbol": "abcx",
-          "quantity": 15915.330010695518,
-          "price": 10.688802578103465,
-          "leverage": 3
+          "quantity": 1058.0683697206698,
+          "price": 9.111615574484814,
+          "leverage": 3,
+          "total": 8319.391681340874
         }
       ]
     }
   },
   {
     "iteration": 5,
-    "normal": 0.959667623845844,
-    "newUnderlyingPrice": 9.973367889029086,
+    "normal": 1.0059863230907287,
+    "newUnderlyingPrice": 9.99293103486414,
     "portfolio": {
+      "total": 19512.274145920946,
       "shares": [
         {
           "symbol": "abc",
-          "quantity": 3136.2218193400104,
-          "price": 99.73367889029086,
-          "leverage": 1
+          "quantity": 97.6303853085994,
+          "price": 99.92931034864144,
+          "leverage": 1,
+          "total": 9698.424654688542
         },
         {
           "symbol": "abcx",
-          "quantity": 33291.18557231693,
-          "price": 9.395488159450721,
-          "leverage": 3
+          "quantity": 1051.8461748145655,
+          "price": 9.275250798606958,
+          "leverage": 3,
+          "total": 9813.849491232404
         }
       ]
     }
   },
   {
     "iteration": 6,
-    "normal": 0.9127592380313885,
-    "newUnderlyingPrice": 9.103283674996906,
+    "normal": 1.07494382192137,
+    "newUnderlyingPrice": 10.741839478813532,
     "portfolio": {
+      "total": 22436.92294366665,
       "shares": [
         {
           "symbol": "abc",
-          "quantity": 5672.928739631913,
-          "price": 91.03283674996906,
-          "leverage": 1
+          "quantity": 104.43706121246596,
+          "price": 107.41839478813534,
+          "leverage": 1,
+          "total": 10487.2992723969
         },
         {
           "symbol": "abcx",
-          "quantity": 74450.27326526304,
-          "price": 6.936479521158076,
-          "leverage": 3
+          "quantity": 987.4868122268324,
+          "price": 11.360619030987493,
+          "leverage": 3,
+          "total": 11949.62367126975
         }
       ]
     }
   },
   {
     "iteration": 7,
-    "normal": 1.012510260398848,
-    "newUnderlyingPrice": 9.2171681242557,
+    "normal": 1.290173639721861,
+    "newUnderlyingPrice": 13.858838137688833,
     "portfolio": {
+      "total": 35458.13013311202,
       "shares": [
         {
           "symbol": "abc",
-          "quantity": 11486.043349042464,
-          "price": 92.171681242557,
-          "leverage": 1
+          "quantity": 127.92605621348709,
+          "price": 138.58838137688838,
+          "leverage": 1,
+          "total": 14473.76326919467
         },
         {
           "symbol": "abcx",
-          "quantity": 147105.1447512368,
-          "price": 7.19681101634097,
-          "leverage": 3
+          "quantity": 834.2981258319103,
+          "price": 21.25027555213274,
+          "leverage": 3,
+          "total": 20984.366863917352
         }
       ]
     }
   },
   {
     "iteration": 8,
-    "normal": 1.0892969713175065,
-    "newUnderlyingPrice": 10.040233321875997,
+    "normal": 1.0097631097307564,
+    "newUnderlyingPrice": 13.994143495167881,
     "portfolio": {
+      "total": 36150.49336378605,
       "shares": [
         {
           "symbol": "abc",
-          "quantity": 24855.26256380047,
-          "price": 100.40233321875996,
-          "leverage": 1
+          "quantity": 129.1629365393768,
+          "price": 139.94143495167887,
+          "leverage": 1,
+          "total": 17902.155874224518
         },
         {
           "symbol": "abcx",
-          "quantity": 273489.19473485113,
-          "price": 9.124771297052112,
-          "leverage": 3
+          "quantity": 826.3845645817871,
+          "price": 21.87268186820559,
+          "leverage": 3,
+          "total": 18248.33748956153
         }
       ]
     }
   },
   {
     "iteration": 9,
-    "normal": 1.0316431194792586,
-    "newUnderlyingPrice": 10.357937624479753,
+    "normal": 1.0211841149279848,
+    "newUnderlyingPrice": 14.290597039288228,
     "portfolio": {
+      "total": 37682.12577602964,
       "shares": [
         {
           "symbol": "abc",
-          "quantity": 51235.27342116137,
-          "price": 103.57937624479752,
-          "leverage": 1
+          "quantity": 131.84237744732621,
+          "price": 142.90597039288235,
+          "leverage": 1,
+          "total": 18458.154784953924
         },
         {
           "symbol": "abcx",
-          "quantity": 531170.8833532737,
-          "price": 9.9909799821727,
-          "leverage": 3
+          "quantity": 809.9244197880963,
+          "price": 23.262742087643538,
+          "leverage": 3,
+          "total": 19223.97099107572
         }
       ]
     }
   },
   {
     "iteration": 10,
-    "normal": 0.899797439488295,
-    "newUnderlyingPrice": 9.320045752886355,
+    "normal": 1.1408710343997648,
+    "newUnderlyingPrice": 16.303728226402978,
     "portfolio": {
+      "total": 48298.765848932315,
       "shares": [
         {
           "symbol": "abc",
-          "quantity": 91059.29946594154,
-          "price": 93.20045752886354,
-          "leverage": 1
+          "quantity": 148.12184421326143,
+          "price": 163.03728226402984,
+          "leverage": 1,
+          "total": 21495.222906240488
         },
         {
           "symbol": "abcx",
-          "quantity": 1214544.417996989,
-          "price": 6.987614653468022,
-          "leverage": 3
+          "quantity": 729.723491971115,
+          "price": 33.09388171022741,
+          "leverage": 3,
+          "total": 26803.542942691827
         }
       ]
     }

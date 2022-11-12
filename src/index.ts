@@ -4,7 +4,6 @@ import Simulation from "./Simulation";
 import Strategy from "./Strategy";
 import AuditLog from "./AuditLog";
 import Portfolio from "./Portfolio";
-import Position from "./Position";
 import normalDistribution from "./normalDistribution";
 
 const monteCarlo: Simulation = ({ portfolio, initialPrice, numSimulations }) => {
@@ -26,19 +25,35 @@ const monteCarlo: Simulation = ({ portfolio, initialPrice, numSimulations }) => 
     underlyingPrices.push(newUnderlyingPrice);
 
     newPortfolio = {
+      ...newPortfolio,
       shares: newPortfolio.shares.map((position) => ({
         ...position,
         price: position.price * (1 + ((normal - 1) * position.leverage)),
       }))
     };
 
-    const portfolioTotal = newPortfolio.shares.reduce((total, position) => position.price * position.quantity + total, 0);
-
     newPortfolio = {
+      ...newPortfolio,
       shares: newPortfolio.shares.map((position) => ({
         ...position,
-        quantity: position.quantity * (portfolioTotal / (position.price * position.quantity)),
+        total: position.quantity * position.price,
       }))
+    };
+
+    newPortfolio = {
+      ...newPortfolio,
+      total: newPortfolio.shares.reduce((total, position) => position.total + total, 0),
+    };
+
+    // rebalance
+    newPortfolio = {
+      ...newPortfolio,
+      shares: newPortfolio.shares.map((position) => {
+        return {
+          ...position,
+          quantity: (newPortfolio.total / 2) / position.price,
+        }
+      })
     };
 
     auditLog.push({
@@ -58,18 +73,21 @@ const monteCarlo: Simulation = ({ portfolio, initialPrice, numSimulations }) => 
 }
 
 const portfolio: Portfolio = {
+  total: (100 * 100) + (1000 * 10),
   shares: [
     {
       symbol: "abc",
       quantity: 100,
       price: 100,
       leverage: 1,
+      total: 10000,
     },
     {
       symbol: "abcx",
       quantity: 1000,
       price: 10,
-      leverage: 3
+      leverage: 3,
+      total: 10000,
     }
   ]
 };
