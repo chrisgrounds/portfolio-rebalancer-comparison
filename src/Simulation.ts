@@ -1,5 +1,4 @@
 import Portfolio from "./Portfolio";
-import Distribution from "./Distribution";
 
 type Simulation = ({ portfolio, initialPrice, numSimulations }: {
   portfolio: Portfolio,

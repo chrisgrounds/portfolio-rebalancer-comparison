@@ -19,6 +19,8 @@
   "homepage": "https://github.com/chrisgrounds/portfolio-rebalancer-comparison#readme",
   "dependencies": {
     "@types/node": "^18.11.9",
+    "chart.js": "^3.9.1",
+    "chartjs-node-canvas": "^4.1.6",
     "fs": "^0.0.1-security"
   }
 }

@@ -2,6 +2,7 @@ import AuditLog from "./AuditLog";
 import normalDistribution from "./normalDistribution";
 import Portfolio from "./Portfolio";
 import Simulation from "./Simulation";
+import fs from "fs";
 
 const monteCarlo: Simulation = ({ portfolio, initialPrice, numSimulations }) => {
   const underlyingPrices: number[] = [initialPrice];

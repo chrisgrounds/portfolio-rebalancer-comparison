@@ -1,5 +1,9 @@
+import { ChartJSNodeCanvas, ChartCallback } from "chartjs-node-canvas";
+import fs from "fs";
+
 import Portfolio from "./Portfolio";
 import monteCarlo from "./monteCarlo";
+import chartConfig from "./chartConfig";
 
 const portfolio: Portfolio = {
   total: (100 * 100) + (1000 * 10),
@@ -21,4 +25,17 @@ const portfolio: Portfolio = {
   ]
 };
 
-console.log(monteCarlo({ portfolio, initialPrice: 10, numSimulations: 10 }));
+async function run() {
+  console.log(monteCarlo({ portfolio, initialPrice: 10, numSimulations: 10 }));
+
+  const chartJSNodeCanvas = new ChartJSNodeCanvas({
+    width: 400, height: 400, chartCallback: (ChartJS) => {
+      ChartJS.defaults.responsive = true;
+      ChartJS.defaults.maintainAspectRatio = false;
+    }
+  });
+  const buffer = await chartJSNodeCanvas.renderToBuffer(chartConfig);
+  await fs.writeFileSync("./example.png", buffer, "base64");
+}
+
+run();
