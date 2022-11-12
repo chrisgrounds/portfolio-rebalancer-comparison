@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-rebalancer-comparison",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisgrounds/portfolio-rebalancer-comparison.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisgrounds/portfolio-rebalancer-comparison/issues"
+  },
+  "homepage": "https://github.com/chrisgrounds/portfolio-rebalancer-comparison#readme",
+  "dependencies": {
+    "@types/node": "^18.11.9",
+    "fs": "^0.0.1-security"
+  }
+}
