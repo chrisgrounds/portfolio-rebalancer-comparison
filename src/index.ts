@@ -25,6 +25,15 @@ const monteCarlo: Simulation = ({ portfolio, initialPrice, numSimulations }) => 
       }))
     };
 
+    const portfolioTotal = newPortfolio.shares.reduce((total, position) => position.price * position.quantity + total, 0);
+
+    newPortfolio = {
+      shares: portfolio.shares.map((position) => ({
+        ...position,
+        quantity: position.quantity * (portfolioTotal / (position.price * position.quantity)),
+      }))
+    };
+
     auditLog.push({
       iteration: i,
       normal,
@@ -58,7 +67,6 @@ const portfolio: Portfolio = {
   ]
 };
 
-// TODO: rebalancing
 
 console.log(monteCarlo({ portfolio, initialPrice: 10, numSimulations: 10 }));
 
