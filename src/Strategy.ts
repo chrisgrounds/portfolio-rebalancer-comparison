@@ -1,3 +1,5 @@
-type Strategy = (changeInPriceAsPercent: number) => number;
+import Portfolio from "./Portfolio";
+
+type Strategy = (portfolio: Portfolio, changeInPriceAsPercent: number) => Portfolio;
 
 export default Strategy;

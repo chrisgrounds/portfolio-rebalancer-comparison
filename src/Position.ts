@@ -1,7 +1,8 @@
 type Position = {
   symbol: string,
-  shareCount: number,
+  quantity: number,
   price: number,
+  leverage: number,
 };
 
 export default Position;

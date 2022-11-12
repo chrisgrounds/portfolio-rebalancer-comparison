@@ -19,9 +19,10 @@ const normalDistribution: Distribution = (): number => {
     : num;
 }
 
-const monteCarlo: Simulation = ({ strategy, initialPrice, numSimulations }) => {
+const monteCarlo: Simulation = ({ portfolio, initialPrice, numSimulations }) => {
   const underlyingPrices: number[] = [initialPrice];
   const auditLog: AuditLog[] = [];
+  let newPortfolio: Portfolio;
 
   for (let i = 1; i < numSimulations + 1; i++) {
     const normal = normalDistribution();
@@ -29,10 +30,19 @@ const monteCarlo: Simulation = ({ strategy, initialPrice, numSimulations }) => {
 
     underlyingPrices.push(newUnderlyingPrice);
 
+    newPortfolio = {
+      shares: portfolio.shares.map((position) => {
+        return {
+          ...position,
+        }
+      })
+    };
+
     auditLog.push({
       iteration: i,
       normal,
       newUnderlyingPrice
+      portfolio: newPortfolio,
     });
   };
 
@@ -44,9 +54,26 @@ const monteCarlo: Simulation = ({ strategy, initialPrice, numSimulations }) => {
   return underlyingPrices;
 }
 
-const shares: Strategy = (changeInPriceAsPercent: number) => changeInPriceAsPercent;
-const leveraged2x: Strategy = (changeInPriceAsPercent: number) => changeInPriceAsPercent * 2;
-const leveraged3x: Strategy = (changeInPriceAsPercent: number) => changeInPriceAsPercent * 3;
+const portfolio: Portfolio = {
+  shares: [
+    {
+      symbol: "abc",
+      quantity: 100,
+      price: 100,
+      leverage: 1,
+    },
+    {
+      symbol: "abcx",
+      quantity: 100,
+      price: 10,
+      leverage: 3
+    }
+  ]
+};
+
+// const shares: Strategy = (portfolio: Portfolio, changeInPriceAsPercent: number) => changeInPriceAsPercent;
+// const leveraged2x: Strategy = (portfolio: Portfolio, changeInPriceAsPercent: number) => changeInPriceAsPercent * 2;
+// const leveraged3x: Strategy = (portfolio: Portfolio, changeInPriceAsPercent: number) => changeInPriceAsPercent * 3;
 
 
 // TODO: rebalancing

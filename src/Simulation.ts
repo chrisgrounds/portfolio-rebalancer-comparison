@@ -1,8 +1,8 @@
-import Strategy from "./Strategy";
+import Portfolio from "./Portfolio";
 import Distribution from "./Distribution";
 
-type Simulation = ({ strategy, initialPrice, numSimulations }: {
-  strategy: Strategy,
+type Simulation = ({ portfolio, initialPrice, numSimulations }: {
+  portfolio: Portfolio,
   initialPrice: number,
   numSimulations: number
 }) => number[];
