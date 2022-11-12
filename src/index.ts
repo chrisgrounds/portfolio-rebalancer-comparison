@@ -10,7 +10,14 @@ import normalDistribution from "./normalDistribution";
 const monteCarlo: Simulation = ({ portfolio, initialPrice, numSimulations }) => {
   const underlyingPrices: number[] = [initialPrice];
   const auditLog: AuditLog[] = [];
-  let newPortfolio: Portfolio;
+  let newPortfolio: Portfolio = portfolio;
+
+  auditLog.push({
+    iteration: 0,
+    normal: 0,
+    newUnderlyingPrice: 0,
+    portfolio: newPortfolio,
+  });
 
   for (let i = 1; i < numSimulations + 1; i++) {
     const normal = normalDistribution();
@@ -19,7 +26,7 @@ const monteCarlo: Simulation = ({ portfolio, initialPrice, numSimulations }) => 
     underlyingPrices.push(newUnderlyingPrice);
 
     newPortfolio = {
-      shares: portfolio.shares.map((position) => ({
+      shares: newPortfolio.shares.map((position) => ({
         ...position,
         price: position.price * (1 + ((normal - 1) * position.leverage)),
       }))
@@ -28,7 +35,7 @@ const monteCarlo: Simulation = ({ portfolio, initialPrice, numSimulations }) => 
     const portfolioTotal = newPortfolio.shares.reduce((total, position) => position.price * position.quantity + total, 0);
 
     newPortfolio = {
-      shares: portfolio.shares.map((position) => ({
+      shares: newPortfolio.shares.map((position) => ({
         ...position,
         quantity: position.quantity * (portfolioTotal / (position.price * position.quantity)),
       }))
@@ -60,7 +67,7 @@ const portfolio: Portfolio = {
     },
     {
       symbol: "abcx",
-      quantity: 100,
+      quantity: 1000,
       price: 10,
       leverage: 3
     }
