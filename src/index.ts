@@ -46,8 +46,15 @@ async function run() {
     prices: data.map((d: AuditLog) => d.portfolio.shares.find((position) => position.symbol === label)?.total || 0),
   }));
 
+  const totalDataset: { label: string, borderColor: string, prices: number[] } = {
+    label: "Total",
+    borderColor: "rgb(255, 0, 0)",
+    prices: data.map((d: AuditLog) => d.portfolio.total),
+  };
+
   const dataset: { label: string, borderColor: string, prices: number[] }[] = [
     underlyingDataset,
+    totalDataset,
     ...portfolioDataset,
   ];
 
