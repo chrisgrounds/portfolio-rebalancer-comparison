@@ -67,7 +67,7 @@ const monteCarlo: Simulation = ({ portfolio, initialPrice, numSimulations }) => 
   } catch (err) {
     console.error(err);
   }
-  return underlyingPrices;
+  return auditLog;
 }
 
 export default monteCarlo;

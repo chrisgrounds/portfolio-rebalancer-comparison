@@ -4,6 +4,7 @@ import fs from "fs";
 import Portfolio from "./Portfolio";
 import monteCarlo from "./monteCarlo";
 import chartConfig from "./chartConfig";
+import AuditLog from "./AuditLog";
 
 const portfolio: Portfolio = {
   total: (100 * 100) + (1000 * 10),
@@ -25,10 +26,30 @@ const portfolio: Portfolio = {
   ]
 };
 
-async function run() {
-  console.log(monteCarlo({ portfolio, initialPrice: 10, numSimulations: 10 }));
+const randomRange = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1) + min)
 
-  const data = null;
+async function run() {
+  const data = monteCarlo({ portfolio, initialPrice: 10, numSimulations: 10 }).slice(1);
+  const labels: string[] = data.map((d: AuditLog) => d.iteration.toString());
+
+  const underlyingDataset: { label: string, borderColor: string, prices: number[] } = {
+    label: "Underlying",
+    borderColor: "rgb(51, 204, 204)",
+    prices: data.map((d: AuditLog) => d.newUnderlyingPrice),
+  };
+
+  const portfolioLabels = data[0].portfolio.shares.map((position) => position.symbol);
+
+  const portfolioDataset: { label: string, borderColor: string, prices: number[] }[] = portfolioLabels.map((label: string) => ({
+    label,
+    borderColor: `rgb(${randomRange(1, 256)}, ${randomRange(1, 256)}, ${randomRange(1, 256)})`,
+    prices: data.map((d: AuditLog) => d.portfolio.shares.find((position) => position.symbol === label)?.total || 0),
+  }));
+
+  const dataset: { label: string, borderColor: string, prices: number[] }[] = [
+    underlyingDataset,
+    ...portfolioDataset,
+  ];
 
   const chartJSNodeCanvas = new ChartJSNodeCanvas({
     width: 400, height: 400, chartCallback: (ChartJS) => {
@@ -36,7 +57,9 @@ async function run() {
       ChartJS.defaults.maintainAspectRatio = false;
     }
   });
-  const buffer = await chartJSNodeCanvas.renderToBuffer(chartConfig(data));
+
+  const buffer = await chartJSNodeCanvas.renderToBuffer(chartConfig({ labels, dataset }));
+
   await fs.writeFileSync("./example.png", buffer, "base64");
 }
 
