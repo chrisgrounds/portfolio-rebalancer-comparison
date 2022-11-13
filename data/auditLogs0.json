@@ -1,0 +1,189 @@
+[
+  {
+    "iteration": 0,
+    "normal": 0,
+    "newUnderlyingPrice": 0,
+    "portfolio": {
+      "total": 20000,
+      "shares": [
+        {
+          "symbol": "ords",
+          "quantity": 100,
+          "price": 100,
+          "leverage": 1,
+          "total": 10000
+        }
+      ]
+    }
+  },
+  {
+    "iteration": 0,
+    "normal": 0.8461179848131529,
+    "newUnderlyingPrice": null,
+    "portfolio": {
+      "total": 8461.179848131529,
+      "shares": [
+        {
+          "symbol": "ords",
+          "quantity": 100,
+          "price": 84.61179848131529,
+          "leverage": 1,
+          "total": 8461.179848131529
+        }
+      ]
+    }
+  },
+  {
+    "iteration": 0,
+    "normal": 1.1199266749176837,
+    "newUnderlyingPrice": null,
+    "portfolio": {
+      "total": 4737.950506599228,
+      "shares": [
+        {
+          "symbol": "ords",
+          "quantity": 50,
+          "price": 94.75901013198455,
+          "leverage": 1,
+          "total": 4737.950506599228
+        }
+      ]
+    }
+  },
+  {
+    "iteration": 0,
+    "normal": 0.9180607334115384,
+    "newUnderlyingPrice": null,
+    "portfolio": {
+      "total": 2174.8631584780287,
+      "shares": [
+        {
+          "symbol": "ords",
+          "quantity": 25.000000000000004,
+          "price": 86.99452633912114,
+          "leverage": 1,
+          "total": 2174.8631584780287
+        }
+      ]
+    }
+  },
+  {
+    "iteration": 0,
+    "normal": 0.8970917153768737,
+    "newUnderlyingPrice": null,
+    "portfolio": {
+      "total": 975.5258607745102,
+      "shares": [
+        {
+          "symbol": "ords",
+          "quantity": 12.500000000000002,
+          "price": 78.0420688619608,
+          "leverage": 1,
+          "total": 975.5258607745102
+        }
+      ]
+    }
+  },
+  {
+    "iteration": 0,
+    "normal": 1.248467865076591,
+    "newUnderlyingPrice": null,
+    "portfolio": {
+      "total": 608.9563443640782,
+      "shares": [
+        {
+          "symbol": "ords",
+          "quantity": 6.250000000000001,
+          "price": 97.4330150982525,
+          "leverage": 1,
+          "total": 608.9563443640782
+        }
+      ]
+    }
+  },
+  {
+    "iteration": 0,
+    "normal": 0.9575381544466034,
+    "newUnderlyingPrice": null,
+    "portfolio": {
+      "total": 291.54946706046485,
+      "shares": [
+        {
+          "symbol": "ords",
+          "quantity": 3.1250000000000004,
+          "price": 93.29582945934874,
+          "leverage": 1,
+          "total": 291.54946706046485
+        }
+      ]
+    }
+  },
+  {
+    "iteration": 0,
+    "normal": 0.9249512171066493,
+    "newUnderlyingPrice": null,
+    "portfolio": {
+      "total": 134.83451720218596,
+      "shares": [
+        {
+          "symbol": "ords",
+          "quantity": 1.5625000000000002,
+          "price": 86.294091009399,
+          "leverage": 1,
+          "total": 134.83451720218596
+        }
+      ]
+    }
+  },
+  {
+    "iteration": 0,
+    "normal": 1.0163148657754721,
+    "newUnderlyingPrice": null,
+    "portfolio": {
+      "total": 68.51716212612011,
+      "shares": [
+        {
+          "symbol": "ords",
+          "quantity": 0.7812500000000002,
+          "price": 87.70196752143372,
+          "leverage": 1,
+          "total": 68.51716212612011
+        }
+      ]
+    }
+  },
+  {
+    "iteration": 0,
+    "normal": 1.1453299492061662,
+    "newUnderlyingPrice": null,
+    "portfolio": {
+      "total": 39.2373789088299,
+      "shares": [
+        {
+          "symbol": "ords",
+          "quantity": 0.3906250000000001,
+          "price": 100.44769000660452,
+          "leverage": 1,
+          "total": 39.2373789088299
+        }
+      ]
+    }
+  },
+  {
+    "iteration": 0,
+    "normal": 0.9497504936373418,
+    "newUnderlyingPrice": null,
+    "portfolio": {
+      "total": 18.63285999384831,
+      "shares": [
+        {
+          "symbol": "ords",
+          "quantity": 0.19531250000000006,
+          "price": 95.40024316850332,
+          "leverage": 1,
+          "total": 18.63285999384831
+        }
+      ]
+    }
+  }
+]

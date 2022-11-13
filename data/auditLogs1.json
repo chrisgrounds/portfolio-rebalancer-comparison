@@ -1,0 +1,266 @@
+[
+  {
+    "iteration": 0,
+    "normal": 0,
+    "newUnderlyingPrice": 0,
+    "portfolio": {
+      "total": 20000,
+      "shares": [
+        {
+          "symbol": "ords",
+          "quantity": 100,
+          "price": 100,
+          "leverage": 1,
+          "total": 10000
+        },
+        {
+          "symbol": "3x",
+          "quantity": 1000,
+          "price": 10,
+          "leverage": 3,
+          "total": 10000
+        }
+      ]
+    }
+  },
+  {
+    "iteration": 1,
+    "normal": 0.8461179848131529,
+    "newUnderlyingPrice": 8.461179848131529,
+    "portfolio": {
+      "total": 13844.719392526116,
+      "shares": [
+        {
+          "symbol": "ords",
+          "quantity": 100,
+          "price": 84.61179848131529,
+          "leverage": 1,
+          "total": 8461.179848131529
+        },
+        {
+          "symbol": "3x",
+          "quantity": 1000,
+          "price": 5.383539544394588,
+          "leverage": 3,
+          "total": 5383.539544394588
+        }
+      ]
+    }
+  },
+  {
+    "iteration": 1,
+    "normal": 1.1199266749176837,
+    "newUnderlyingPrice": 11.199266749176838,
+    "portfolio": {
+      "total": 17165.42171635418,
+      "shares": [
+        {
+          "symbol": "ords",
+          "quantity": 81.8131728731864,
+          "price": 94.75901013198455,
+          "leverage": 1,
+          "total": 7752.535277220074
+        },
+        {
+          "symbol": "3x",
+          "quantity": 1285.837995463544,
+          "price": 7.3204295349359025,
+          "leverage": 3,
+          "total": 9412.886439134105
+        }
+      ]
+    }
+  },
+  {
+    "iteration": 1,
+    "normal": 0.9180607334115384,
+    "newUnderlyingPrice": 9.180607334115384,
+    "portfolio": {
+      "total": 14352.377584114753,
+      "shares": [
+        {
+          "symbol": "ords",
+          "quantity": 90.57408732132923,
+          "price": 86.99452633912114,
+          "leverage": 1,
+          "total": 7879.449825117234
+        },
+        {
+          "symbol": "3x",
+          "quantity": 1172.432685434249,
+          "price": 5.520937653320419,
+          "leverage": 3,
+          "total": 6472.927758997519
+        }
+      ]
+    }
+  },
+  {
+    "iteration": 1,
+    "normal": 0.8970917153768737,
+    "newUnderlyingPrice": 8.970917153768736,
+    "portfolio": {
+      "total": 11398.420469225435,
+      "shares": [
+        {
+          "symbol": "ords",
+          "quantity": 82.49011856312929,
+          "price": 78.0420688619608,
+          "leverage": 1,
+          "total": 6437.6995133350465
+        },
+        {
+          "symbol": "3x",
+          "quantity": 1299.8134090033514,
+          "price": 3.8164869830771213,
+          "leverage": 3,
+          "total": 4960.720955890389
+        }
+      ]
+    }
+  },
+  {
+    "iteration": 1,
+    "normal": 1.248467865076591,
+    "newUnderlyingPrice": 12.484678650765911,
+    "portfolio": {
+      "total": 17062.70286769295,
+      "shares": [
+        {
+          "symbol": "ords",
+          "quantity": 73.02741095566499,
+          "price": 97.4330150982525,
+          "leverage": 1,
+          "total": 7115.280834229597
+        },
+        {
+          "symbol": "3x",
+          "quantity": 1493.313159427472,
+          "price": 6.661310101410438,
+          "leverage": 3,
+          "total": 9947.422033463356
+        }
+      ]
+    }
+  },
+  {
+    "iteration": 1,
+    "normal": 0.9575381544466034,
+    "newUnderlyingPrice": 9.575381544466033,
+    "portfolio": {
+      "total": 15613.675159909999,
+      "shares": [
+        {
+          "symbol": "ords",
+          "quantity": 87.56119704643615,
+          "price": 93.29582945934874,
+          "leverage": 1,
+          "total": 8169.0945069007375
+        },
+        {
+          "symbol": "3x",
+          "quantity": 1280.7317635670622,
+          "price": 5.812755539282326,
+          "leverage": 3,
+          "total": 7444.580653009262
+        }
+      ]
+    }
+  },
+  {
+    "iteration": 1,
+    "normal": 0.9249512171066493,
+    "newUnderlyingPrice": 9.249512171066494,
+    "portfolio": {
+      "total": 13270.10052542322,
+      "shares": [
+        {
+          "symbol": "ords",
+          "quantity": 83.67831258048494,
+          "price": 86.294091009399,
+          "leverage": 1,
+          "total": 7220.943921333304
+        },
+        {
+          "symbol": "3x",
+          "quantity": 1343.0527960786862,
+          "price": 4.504034853843162,
+          "leverage": 3,
+          "total": 6049.156604089916
+        }
+      ]
+    }
+  },
+  {
+    "iteration": 1,
+    "normal": 1.0163148657754721,
+    "newUnderlyingPrice": 10.163148657754721,
+    "portfolio": {
+      "total": 13703.100343221824,
+      "shares": [
+        {
+          "symbol": "ords",
+          "quantity": 76.88881341816246,
+          "price": 87.70196752143372,
+          "leverage": 1,
+          "total": 6743.300217161261
+        },
+        {
+          "symbol": "3x",
+          "quantity": 1473.1347509556047,
+          "price": 4.72448302610866,
+          "leverage": 3,
+          "total": 6959.800126060562
+        }
+      ]
+    }
+  },
+  {
+    "iteration": 1,
+    "normal": 1.1453299492061662,
+    "newUnderlyingPrice": 11.453299492061662,
+    "portfolio": {
+      "total": 17686.042096916677,
+      "shares": [
+        {
+          "symbol": "ords",
+          "quantity": 78.1231067585393,
+          "price": 100.44769000660452,
+          "leverage": 1,
+          "total": 7847.285610034625
+        },
+        {
+          "symbol": "3x",
+          "quantity": 1450.22220076727,
+          "price": 6.784309660737958,
+          "leverage": 3,
+          "total": 9838.756486882052
+        }
+      ]
+    }
+  },
+  {
+    "iteration": 1,
+    "normal": 0.9497504936373418,
+    "newUnderlyingPrice": 9.497504936373417,
+    "portfolio": {
+      "total": 15908.612327158165,
+      "shares": [
+        {
+          "symbol": "ords",
+          "quantity": 88.03608174440748,
+          "price": 95.40024316850332,
+          "leverage": 1,
+          "total": 8398.66360601871
+        },
+        {
+          "symbol": "3x",
+          "quantity": 1303.4518603469003,
+          "price": 5.761585026347471,
+          "leverage": 3,
+          "total": 7509.948721139455
+        }
+      ]
+    }
+  }
+]

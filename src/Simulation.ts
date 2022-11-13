@@ -1,10 +1,10 @@
 import AuditLog from "./AuditLog";
 import Portfolio from "./Portfolio";
 
-type Simulation = ({ portfolio, initialPrice, numSimulations }: {
-  portfolio: Portfolio,
+type Simulation = ({ portfolios, initialPrice, numSimulations }: {
+  portfolios: Portfolio[],
   initialPrice: number,
   numSimulations: number
-}) => AuditLog[];
+}) => AuditLog[][];
 
 export default Simulation;
