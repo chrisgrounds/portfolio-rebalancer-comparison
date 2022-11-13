@@ -57,7 +57,7 @@ const monteCarlo: Simulation = ({ portfolios, initialPrice, numSimulations }) =>
         shares: newPortfolios[i].shares.map((position) => {
           return {
             ...position,
-            quantity: (newPortfolios[i].total / newPortfolios.length) / position.price,
+            quantity: (newPortfolios[i].total / newPortfolios[i].shares.length) / position.price,
           }
         })
       };
